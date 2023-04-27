@@ -1,0 +1,19 @@
+[
+    {
+        "text": "Home",
+        "href": "/"
+    },
+    {
+        "text": "About",
+        "href": "/about"
+    },
+    {
+        "text": "Blog",
+        "href": "/blog",
+        "active": true
+    },
+    {
+        "text": "Contact",
+        "href": "/contact"
+    }
+]
