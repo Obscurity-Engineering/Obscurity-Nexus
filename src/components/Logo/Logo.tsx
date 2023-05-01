@@ -8,9 +8,9 @@ interface Props {
 
 // TODO: Design a logo. The current one is a placeholder.
 
-const Logo: FC<Props> = ({ width, height }) => {
+export const Logo: FC<Props> = ({ width, height }) => {
   return (
-    <div>
+    <div className='logo'>
       <Image src="/logo.svg" alt="Logo" width={width} height={height} />
     </div>
   );

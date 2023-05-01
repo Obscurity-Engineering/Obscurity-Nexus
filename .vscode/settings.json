@@ -7,5 +7,8 @@
         "tsconfig.json": "tsconfig.*.json, tailwind.config.js, .eslintrc.json, next.config.js",
         "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, next-env.d.ts, .gitignore",
         "README.md": "LICENSE",
-    }
+    },
+    "cSpell.words": [
+        "autodocs"
+    ]
 }

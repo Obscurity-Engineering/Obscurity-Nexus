@@ -6,18 +6,12 @@ interface Props {
     href: string,
 }
 
-const NavItem: FC<Props> = ({ text, href }) => {
+export const NavItem: FC<Props> = ({ text, href }) => {
     return (
-        <Link href={href}>
+        <Link className='nav__item' href={href}>
                 {text}
         </Link>
     );
 };
 
-NavItem.defaultProps = {
-    text: 'Link',
-    href: 'http://localhost:3000/',
-}
-
-export default NavItem;
 

@@ -1,4 +1,4 @@
-import Logo from '../src/components/Logo/Logo';
+import { Header } from '../src/components/Header/Header';
 import { NextPage } from 'next';
 
 interface Props {
@@ -8,7 +8,9 @@ interface Props {
 const Landing: NextPage<Props> = ({ /* Destructure any props you defined */ }) => {
   return (
     <div>
-      <Logo width={100} height={100}></Logo>
+      <div>
+        <Header />
+      </div>
       <h1>Welcome!</h1>
       <p>This will look great at some point.</p>
     </div>

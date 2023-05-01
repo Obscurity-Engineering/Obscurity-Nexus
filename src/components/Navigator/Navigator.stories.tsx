@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import nav_links from '../Header/nav_links.json';
+import { NavLinks } from '../../library/NavLinks';
 
-import Navigator from './Navigator';
+import { Navigator } from './Navigator';
 
 const meta = {
     title: 'Navigator',
@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default = {
     args: {
-        navItems: nav_links,
+        navItems: NavLinks,
     }
 } satisfies Story;
 
