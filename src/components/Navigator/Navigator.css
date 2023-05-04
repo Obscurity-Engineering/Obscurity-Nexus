@@ -1,0 +1,9 @@
+.navigator {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navigator__list {
+  list-style: none;
+  display: flex;
+}

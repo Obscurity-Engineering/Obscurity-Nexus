@@ -16,7 +16,7 @@ export const Header: FC<Props> = ({ }) => {
         <Logo width={100} height={100} />
       </div>
       <div>
-        <Navigator navItems={NavLinks} />
+        <Navigator navLinks={NavLinks} />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default = {
     args: {
-        navItems: NavLinks,
+        navLinks: NavLinks,
     }
 } satisfies Story;
 

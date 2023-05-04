@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { NavItem } from './NavItem';
+import { NavButton } from './NavButton';
 
 const meta = {
     title: 'NavItem',
-    component: NavItem,
+    component: NavButton,
     tags: ['autodocs'],
-} satisfies Meta<typeof NavItem>;
+} satisfies Meta<typeof NavButton>;
 
 export default meta;
 

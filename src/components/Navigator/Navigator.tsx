@@ -1,22 +1,23 @@
 import React, { FC } from 'react';
-import { NavItem } from '../NavItem/NavItem';
+import { NavButton } from '../NavButton/NavButton';
 
 
 interface Props {
-  navItems: Record<string, {
+  navLinks: Record<string, {
     text: string,
     href: string,
-    active: boolean
   }>
 }
 
-export const Navigator: FC<Props> = ({ navItems }) => {
+export const Navigator: FC<Props> = ({ navLinks }) => {
+
+
   return (
     <nav className="navigator">
-      <ul className="nav__list">
-        {Object.values(navItems).map((navItem, index) => (
+      <ul className="navigator__list">
+        {Object.values(navLinks).map((navLink, index) => (
           <li key={index}>
-            <NavItem key={index} text={navItem.text} href={navItem.href} />
+            <NavButton key={index} text={navLink.text} href={navLink.href} />
           </li>
         ))}
       </ul>
