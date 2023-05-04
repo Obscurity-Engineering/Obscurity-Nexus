@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "compile-sass": "sass --watch ./src/styles/main.scss:./src/styles/main.css ./src:./src",
+    "dev": "concurrently \"yarn compile-sass --no-source-map --watch --verbose\" \"next dev\""
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -18,11 +19,13 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
+    "concurrently": "^8.0.1",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.62.1",
     "typescript": "5.0.4"
   },
   "devDependencies": {
